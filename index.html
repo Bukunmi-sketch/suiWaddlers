@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waddlers | Landing page </title>
-
-    <meta property="og:title" content="Rotten Us NFT Collection">
-    <meta property="og:site_name" content="Rotten Us">
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <meta property="og:title" content="waddlers NFT Collection">
+    <meta property="og:site_name" content="waddlers">
     <meta property="og:url" content="">
     <meta property="og:description"
         content="A first of its kind omega NFT collection on Sui.
 
         Crypto has been rotten with all these exploits, rugs, bankrupts, FUD & depression. We’re bringing a rotten community to fresh & virgin Sui Network to see what will happen. Each character we chose represents overall market & economic condition, as well as your personal feelings. Think of it as a proof of survival during probably the most tough bear market.">
     <meta property="og:type" content=website>
-    <meta property="og:image" content="https://pbs.twimg.com/profile_banners/1599792380273721345/1671436430/1500x500">
-
+    <!-- <meta property="og:image" content="https://pbs.twimg.com/profile_banners/1599792380273721345/1671436430/1500x500"> -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,9 +28,11 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Gantari:wght@300;400&family=Montserrat:ital,wght@0,200;0,300;0,600;0,700;1,100&family=Noto+Sans:wght@200;400;500;700&family=Nunito+Sans:wght@200;300;400;600;700;900&family=Prompt:wght@100;200;300;500&family=Quicksand:wght@300;400;600;700&family=Rubik+Moonrocks&family=Work+Sans:wght@200;300;400;600;800&display=swap"
         rel="stylesheet"> -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,200;0,500;0,600;0,700;1,500&family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700;1,900&family=Montserrat:wght@100;200;400;500;600;700;800;900&family=Mukta:wght@200;300;500;700;800&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Poppins:ital,wght@0,100;0,400;0,600;0,900;1,500&family=Press+Start+2P&family=Prompt:wght@100;300;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;800;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Josefin+Sans:ital,wght@0,200;0,500;0,600;0,700;1,500&family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,700;1,900&family=Montserrat:wght@100;200;400;500;600;700;800;900&family=Mukta:wght@200;300;500;700;800&family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,800;1,400;1,800&family=Poppins:ital,wght@0,100;0,400;0,600;0,900;1,500&family=Press+Start+2P&family=Prompt:wght@100;300;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
@@ -48,23 +50,29 @@
     <!--header-->
 
     <header>
-        <h2 class="logo"> <img src="assets/images/logo.png" alt=""> </h2>
-        <h1> Waddlers </h1>
+        <div class="logoheaders">
+            <h2 class="logo"><a href="index.html" style="text-decoration: none; color: white;" onclick="closethebar()"><img src="assets/images/logo.png" alt=""> </a>  </h2>
+            <h1> <a href="index.html" style="text-decoration: none; color: white;" onclick="closethebar()"> Waddlers </a></h1>
+        </div>
         <ul>
-            <li><a href="#home" class="homelink">Home</a></li>
-            <li><a href="#about">Sneak Peak</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#faq">F<span>A</span>Q</a></li>
-            <li><a href="#friends">Friends</a></li>
+            <li><a href="#home" onclick="closethebar()">Home</a></li>
+            <li><a href="#about" onclick="closethebar()">Sneak Peak</a></li>
+            <li><a href="#team" onclick="closethebar()">Team</a></li>
+            <li><a href="#faq" onclick="closethebar()">F<span>A</span>Q</a></li>
+            <li><a href="#friends" onclick="closethebar()">Friends</a></li>
 
-            <li><a href="#" class="resume_view"> Shop </a></li>
-            <li><a href="#" class="resume_view"> Stake </a></li>
+            <li><a href="soon.html" class="resume_view"> Shop </a></li>
+            <li><a href="soon.html" class="resume_view"> Stake </a></li>
         </ul>
+
+        <!-- <div class="darkmode">
+            <img src="assets/images/darkmode.png" />
+         </div> -->
 
         <div class="bars">
             <i class="fa fa-bars"></i>
         </div>
+
         <div class="closebar">
             <i class="fa fa-remove"></i>
         </div>
@@ -77,14 +85,14 @@
 
         <div class="first-box-container">
             <div class="first-box" data-aos="fade-right" data-aos-duration="2000">
-                <h2>Sui Waddlers   <!--<span class="primary"> Us </span> --> </h2> <br>
+                <h2>Sui Waddlers <!--<span class="primary"> Us </span> --> </h2> <br>
                 <h2><span class="primary"> NFT </span> Collection</h2> <br>
                 <!-- <p>A first of its kind omega NFT collection on Sui.</p> <br><br> -->
                 <p> Discover A New Era Of Pixels With Waddlers! </p>
 
                 <div class="button-box">
                     <button> <a href="" class="resume_view"> Discord </a></button>
-                    <button> <a href="" class="resume_view">  Twitter </a></button>
+                    <button> <a href="" class="resume_view"> Twitter </a></button>
                 </div>
 
             </div>
@@ -111,11 +119,12 @@
 
         <div class="second-box-container">
             <div class="second-box" data-aos="fade-up" data-aos-duration="2000">
-                <h3> <span class="primary">Waddlers </span> </h3>
+                <h3> <span class="primary">Waddlers </span> </h3> <br>
                 <h1>Sneak Peak </h1><br> <br><br>
 
                 <h3 class="font"> Welcome to SuiWaddlers </h3>
-                <p> A one-of-a-kind NFT collection of 5555 waddlers on Sui network with iconic looks of punks art with a mixture of our creativity!
+                <p> A one-of-a-kind NFT collection of 5555 waddlers on Sui network with iconic looks of punks art with a
+                    mixture of our creativity!
                 </p>
 
             </div>
@@ -123,26 +132,16 @@
             <div class="author-box" data-aos="fade-up" data-aos-duration="1500">
 
                 <div class="author-container">
-                    <img src="assets/images/team-faber.png" alt="Team Image">
-                    <div class="team__item-author">
-                        <h4><a>Faber</a></h4>
-                        <p>Co-Founder</p>
-                    </div>
+                    <img src="assets/images/nftcards.png" alt="nftcards">
                 </div>
-                <div class="author-container">
-                    <img src="assets/images/team-dave.png" alt="Team Image">
-                    <div class="team__item-author">
-                        <h4><a>Dave</a> </h4>
-                        <p>Co-Founder</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
     <!-- ================> About section end here <================== -->
 
 
-   
+
 
     <!-- ================>MEET TEAM MEMBERS SECTION STARTS HERE  <================== -->
 
@@ -157,7 +156,7 @@
 
         <div class="team-box">
 
-            <div class="team-card">
+            <div class="team-card" data-aos="fade-up" data-aos-duration="1000">
 
                 <div class="team-first">
                     <img src="assets/images/sherry.png" alt="Team Image">
@@ -169,13 +168,15 @@
                         <p>Founder</p>
                     </div>
 
-                    <p>The Founder, the Creator, the one man Army. 😜 The one and only "Shahriyar" is here. Nick name is SHERY 😁. Having 3 years of experience with NFT’s and 1 year of experience with running communities and a professional pixel art artist. 🎨</p>
+                    <p>The Founder, the Creator, the one man Army. 😜 The one and only "Shahriyar" is here. Nick name is
+                        SHERY 😁. Having 3 years of experience with NFT’s and 1 year of experience with running
+                        communities and a professional pixel art artist. 🎨</p>
 
                 </div>
 
             </div>
 
-            <div class="team-card">
+            <div class="team-card" data-aos="zoom-in" data-aos-duration="1100" >
 
                 <div class="team-first">
                     <img src="assets/images/klien.png" alt="Team Image">
@@ -187,13 +188,14 @@
                         <p>Colab-Manager</p>
                     </div>
 
-                    <p>Hello I’m an experienced Collab Manager, community Manager or a Server Moderator with 2 years of Experience. Real name is Joe.</p>
+                    <p>Hello I’m an experienced Collab Manager, community Manager or a Server Moderator with 2 years of
+                        Experience. Real name is Joe.</p>
 
                 </div>
 
             </div>
 
-            <div class="team-card">
+            <div class="team-card" data-aos="zoom-in" data-aos-duration="1000">
 
                 <div class="team-first">
                     <img src="assets/images/james.png" alt="Team Image">
@@ -205,13 +207,16 @@
                         <p>Developer</p>
                     </div>
 
-                    <p>An experienced blockchain and software developer with a deep understanding of blockchain technology, cryptographic protocols, and smart contract development for the past 3 years. Proficient in various platforms such as Etherum (solidity), Solana (rust), Aptos, Sui (move) and many more. </p>
+                    <p>An experienced blockchain and software developer with a deep understanding of blockchain
+                        technology, cryptographic protocols, and smart contract development for the past 3 years.
+                        Proficient in various platforms such as Etherum (solidity), Solana (rust), Aptos, Sui (move) and
+                        many more. </p>
 
                 </div>
 
             </div>
 
-            <div class="team-card">
+            <div class="team-card" data-aos="slide-up" data-aos-duration="1100">
 
                 <div class="team-first">
                     <img src="assets/images/abdul.png" alt="Team Image">
@@ -223,7 +228,8 @@
                         <p>Designer </p>
                     </div>
 
-                    <p>I’m a User Interface (UI) designer specializing in creating visually appealing designs. With expertise in web, mobile, and desktop applications. ✌</p>
+                    <p>I’m a User Interface (UI) designer specializing in creating visually appealing designs. With
+                        expertise in web, mobile, and desktop applications. ✌</p>
 
                 </div>
 
@@ -250,7 +256,7 @@
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="faq-card-header">
                     <span> 1 </span>
-                    <h3> When is minting? </h3> 
+                    <h3> When is minting? </h3>
                 </div>
                 <p>To be answered soon, to be answered soon</p>
             </div>
@@ -258,16 +264,17 @@
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
                 <div class="faq-card-header">
                     <span> 2 </span>
-                    <h3> How to be eligible for mint? </h3> 
+                    <h3> How to be eligible for mint? </h3>
                 </div>
-                <p> You can get the waddlist role in our discord channel And more info related to eligible for WL role. </p>
+                <p> You can get the waddlist role in our discord channel And more info related to eligible for WL role.
+                </p>
             </div>
 
-           
+
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
                 <div class="faq-card-header">
                     <span> 3 </span>
-                    <h3> What is the price? </h3> 
+                    <h3> What is the price? </h3>
                 </div>
                 <p>To be answered soon, to be answered soon</p>
             </div>
@@ -275,7 +282,7 @@
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
                 <div class="faq-card-header">
                     <span> 4 </span>
-                    <h3>What is the supply? </h3> 
+                    <h3>What is the supply? </h3>
                 </div>
                 <p>The supply is 5555 only!</p>
             </div>
@@ -283,15 +290,18 @@
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1000">
                 <div class="faq-card-header">
                     <span> 5 </span>
-                    <h3> How to get $WADL Token? </h3> 
+                    <h3> How to get $WADL Token? </h3>
                 </div>
-                <p>$WADL Token will launch upon the mainnet of Sui Network! We will airdrop our $WADL Tokens to our holders and early contributors! our Zealy and OAT Holders will also be considered for airdrops! You can get $WADL Token through Zealy by gaining XP. Convert ratio from XP to Token will release soon!</p>
+                <p>$WADL Token will launch upon the mainnet of Sui Network! We will airdrop our $WADL Tokens to our
+                    holders and early contributors! our Zealy and OAT Holders will also be considered for airdrops! You
+                    can get $WADL Token through Zealy by gaining XP. Convert ratio from XP to Token will release soon!
+                </p>
             </div>
 
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
                 <div class="faq-card-header">
                     <span> 6 </span>
-                    <h3> Is there any airdrop? </h3> 
+                    <h3> Is there any airdrop? </h3>
                 </div>
                 <p>Yes there is! we will airdrop our native token $WADL to our early contributors and supporters!</p>
             </div>
@@ -409,7 +419,7 @@
 
     <!-- ================> Footer section start here <================== -->
     <footer class="footer-container">
-        <p>Copyright © 2023 <a href="index.html"><strong> Waddlers </strong></a> All Rights Reserved </p>
+        <p> <a href="#home"> <img src="assets/images/arrowup.png"> </p>
     </footer>
     <!-- ================> Footer section end here <================== -->
 
@@ -418,8 +428,8 @@
 
 </body>
 
-<script src="assets/js/b.js"></script>
-<!-- <script src="assets/js/aos.js"></script> -->
+<script src="assets/js/index.js"></script>
+<script src="assets/js/aos.js"></script>
 <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 <script src="assets/js/slide.js"></script>
 <script>

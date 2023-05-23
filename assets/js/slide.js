@@ -33,7 +33,7 @@ $(function() {
             'left' : '0'
         }        
         
-        $('.partner-card').css(setCSS);
+        // $('.partner-card').css(setCSS);
         
         //show first item
         $('.partner-card').eq($i).show();

@@ -6,6 +6,7 @@
 
   header ul {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -20,12 +21,31 @@
     border: 1px solid transparent;
   }
 
+   
+  .logoheaders h1{
+    font-size: 1.4em;
+    margin-left: 10px;
+  }
+  
   .logo {
     font-size: 25px;
     letter-spacing: 0;
-
     margin-left: 20px;
   }
+
+  .logo img{
+    width:20px;
+    height: 20px;
+  }
+
+  .darkmode{
+    padding: 10px;
+  }
+
+  .darkmode img{
+    width:17px;
+    height: 17px;
+  } 
 
   .bars {
     display: block;
@@ -44,11 +64,11 @@
     width: 100%;
   }
 
-  .first-box .button-box{
+  /* .first-box .button-box{
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-  }
+  } */
 
   .image-box {
     width: 100%;
@@ -75,6 +95,11 @@
     flex-direction: column;
   }
 
+  .second-box-container .box2 h1{
+    font-size:1.5em;
+  }
+
+
   .second-box {
     margin: 10px;
     width: 100%;
@@ -87,42 +112,28 @@
   }
 
 
-  /* ---------------------------ROADMAP BOX-----------------*/
-
-  .roadmap-box {
-    flex-direction: column;
-  }
-
-  .roadmap-item-inner-1 {
-    width: 100%;
-  }
-
-  .roadmap-item-inner-2 {
-    width: 100%;
-    border: none;
-  }
-
-  .roadmap-card-2 {
-
-    margin: 50px 0 0 0;
-  }
-
-  .roadmap-item-inner-2 {
-    margin: 10px 0 0 -10px;
-
-  }
-
   /* ---------------------------TEAM BOX-----------------*/
+
+  .team-container h3 {
+    font-size:1.5em;
+  }
+  
 
   .team-card {
     flex-direction: column;
     width: 100%;
+    border-radius: 15px;
   }
 
 
   .team-first {
     width: 100%;
 
+  }
+
+  .team-first img{
+    border-radius: 15px;
+    object-fit: contain;
   }
 
   .team-item-content {
@@ -133,6 +144,14 @@
 /* ---------------------------FAQ BOX-----------------*/
 .faq-container {
   padding:5px;
+}
+
+.faq-container h3 {
+  font-size: 1.4em;
+}
+
+.faq-card-header h3{
+  font-size: 1em;
 }
 
   .faq-wrapper{
@@ -146,23 +165,24 @@
   }
 
 
+  /* ------------------------PARTNER WITH US---------------------- */
 
-  .community_container p {
-    font-size:2em;
-
+  .partner-card {
+    width:50%;
+   
+    /* flex-shrink: unset; */
+    /* display: none; */
   }
 
 
-  .community_container .button-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    height:100px;
+}
 
+@media screen and (max-width:500px) {
+
+  .partner-card {
+    width:100%;
+   
+    /* flex-shrink: unset; */
+    /* display: none; */
   }
-
-
-
-
 }

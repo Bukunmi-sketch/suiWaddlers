@@ -80,11 +80,12 @@
   
   body,html{
     color: var(--color-light);
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
+    background-color: var(--color-black);
     overflow-x: hidden;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    
+    scroll-behavior: smooth; 
   }
 
   button{
@@ -130,6 +131,18 @@
     z-index: 150;
     top: 0;
   }
+
+  .logoheaders{
+     display: flex;
+     align-items: center;
+     justify-content:space-between;
+     border: 1px solid transparent;
+  }
+
+  .logoheaders h1{
+    font-size: 1.8em;
+    margin-left: 30px;
+  }
   
   .logo {
     font-size: 30px;
@@ -144,9 +157,24 @@
     padding: 2px 10px;
     display: none;
     font-size: 1.6em;
-    color: var(--color-primary);
+    color: var(--color-white);
     border-radius: 5px;
     
+  }
+
+  .darkmode{
+    border: 1px solid transparent;
+    padding: 2px 10px;
+    font-size:2em;
+    color: var(--color-white);
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    padding: 15px;
+  }
+
+  .darkmode img{
+    width:20px;
+    height: 20px;
   }
   
   .closebar {
@@ -187,11 +215,13 @@
   }
   
   header ul li a:hover {
-    background-color: var(--color-primary);
+    background-color:transparent;
     color: white;
     padding: 15px 30px;
     border-radius: 4px;
     transition: 0.4s;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
   }
   
   header ul li a.resume_view:hover {
@@ -248,18 +278,18 @@
   width: 30%;
   padding: 10px 30px;
   border-radius: 30px;
-  color: white;
+  /* color: white; */
   font-family: "Montserrat", sans-serif;
 }
 
 .box1 h2{
   font-size:1em;
-  color:#EFE9FF;
+  /* color:#EFE9FF; */
   font-family: 'Press Start 2P', cursive;
 }  
 
 .first-box p {
-  color: var(--color-white);
+  /* color: var(--color-white); */
   font-weight: light;
   text-indent: 5px;
   text-align: justify;
@@ -298,7 +328,7 @@
 .first-box a:hover {
   background-color: unset;
   border: 2px solid var(--color-primary);
-  color: var(--color-white);
+  /* color: var(--color-white); */
   transition: 0.4s;
 }
 
@@ -311,7 +341,7 @@
 }
 
 .swiper-box{
-  border: 1px solid yellow;
+  border: 1px solid transparent;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -442,31 +472,31 @@ h3 .font{
 }
 
 .author-box{
-   border: 1px solid green;
+   border: 1px solid transparent;
    width: 50%;
    display: flex;
-   padding: 20px;
+   padding:10px;
    justify-content: center;
    align-items: center;
 }
 
 .author-container{
-  background-color:var(--color-dark);
   border: 1px solid transparent;
-  height:300px;
   border-radius: 20px;
-  margin:0 0 0 15px;
 }
 
 
 .second-box-container .author-box img {
   margin: 10px;
-  width:90%;
-  object-fit: cover;
+  width:100%;
+  object-fit: contain;
   padding: 0;
-  height:200px;
+  height:400px;
   border: 1px solid transparent;
   border-radius: 20px;
+  background-blend-mode: darken;
+  background-color: rgb(0,0,0 ,.65);
+
 }
 
 
@@ -498,7 +528,7 @@ h3 .font{
 .or {
   text-align: center;
   display: flex;
-  color: white;
+  /* color: white; */
   font-size: 1rem;
   border: 1px solid transparent;
   font-weight: bold;
@@ -509,7 +539,7 @@ h3 .font{
   /* border-bottom: 1px solid #cecece; */
   margin: 10px;
   content: " ";
-  width: 40%;
+  width: 80%;
   flex: 10%;
 }
 
@@ -567,9 +597,13 @@ h3 .font{
   align-items: start;
 }
 
+.team-author h4{
+  font-family: 'Press Start 2P', cursive;
+}
+
 .team-item-content p{
   margin-top:30px;
-  color: white;
+  /* color: white; */
   line-height: 25px;
   font-size: 1em;
 }  
@@ -578,7 +612,7 @@ h3 .font{
   margin-top: 10px;
 }
 
-div.team-title {
+/* div.team-title {
   font-size: 1.2em;
   color: black;
   font-weight: bold;
@@ -595,7 +629,7 @@ div.team-title {
 .team-location i {
   color: var(--color-primary);
   font-size: 1.2em;
-}
+} */
 
 
 
@@ -722,7 +756,10 @@ faq-container .or{
   width:100%;
   margin:30px auto;
   display: flex;
-  /* overflow-x: scroll;
+  background-color: #1B1C1E;
+  position: relative;
+  /* flex-shrink: 0; */
+  /* overflow-x: auto;
   white-space: nowrap; */
   /* position: relative;
       display: flex;
@@ -734,7 +771,7 @@ faq-container .or{
 }
 
 
-@keyframes slideInFromLeft {
+/* @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
@@ -745,20 +782,20 @@ faq-container .or{
   100%{
     transform: translateX(-100%);
   }
-}
+} */
 
 .partner-card {
   background-color: #262626;
-  min-width:50px;
+  min-width: 300px;
   width:30%;
   border: 1px solid transparent;
-  box-shadow: 0 0 10px transparent;
   border-radius: 25px;
   margin: 20px;
   height: 150px;
   display: inline-flex;
   padding:10px;
   justify-content: space-between;
+  /* flex-shrink: unset; */
   display: none;
 }
 
@@ -782,40 +819,40 @@ faq-container .or{
 .partner-item-content{
   width:60%;
   border: 1px solid transparent;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   /* margin-top: 30px; */
 }
 
 .partner-author{
-  display: flex;
+  display:inline-block;
   flex-direction: column;
   justify-content:center;
   align-items:center;
+  border: 1px solid transparent;
+  width: 100%;
+  /* display: block; */
+  /* white-space:pre-wrap; */
 }
 
 .partner-author h4{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  color: var(--color-primary);
-  
+  color: var(--color-primary); 
   font-family: 'Press Start 2P', cursive;
+  
 }
 
-.partner-item-content p{
+.partner-author p{
   margin-top:10px;
   color: white;
   line-height: 25px;
   font-size: 1em;
+  text-overflow: ellipsis;
+  /* display: block; */
 }  
 
-.partner-author p{
-  margin-top: 10px;
-}
 
 
 /* ---------------------------CONTACT ME-----------------*/
@@ -825,10 +862,13 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-black);
 }
 
 footer p a{
   color: white;
   text-decoration: none;
+  background-color: var(--color-dark);
+  
 }
 
