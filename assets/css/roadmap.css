@@ -6,7 +6,7 @@
     --color-primary:#583BAE;
     --color-secondary: #d6ccff;
     --color-danger: #fb5151;
-    --color-black: #161718;
+    --color-black: #1B1C1E;
     --color-success: #51fb51;
     --color-white: #ffffff;
     --color-fadewhite: #f8f8f8;
@@ -283,9 +283,10 @@
 }
 
 .box1 h2{
-  font-size:1em;
+  font-size:2em;
   /* color:#EFE9FF; */
   font-family: 'Press Start 2P', cursive;
+  color: var(--color-primary);
 }  
 
 .first-box p {
@@ -302,105 +303,82 @@
   
 }
 
-.first-box button {
-  margin: 20px 0 0 0;
-  border: unset;
-  background: unset;
-}
 
-.first-box .button-box{
-  display: flex;
-  border: 1px solid transparent;
-  justify-content: start;
-  width: 100%;
-  height:100px;
-}
-
-.first-box a {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 10px 30px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  margin: 10px;
-  text-decoration: none;
-}
-.first-box a:hover {
-  background-color: unset;
-  border: 2px solid var(--color-primary);
-  /* color: var(--color-white); */
-  transition: 0.4s;
-}
-
-.image-box{
-   border: 1px solid transparent;
-   width: 50%;
-   /* height: 300px; */
-   padding:5px;
-   position: relative;
-}
-
-.swiper-box{
-  border: 1px solid transparent;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-   justify-content:center;
-  align-items: center;
-}
-
-.first-box-container .image-box .swiper-box .swiper-slide img {
-  margin: 10px;
-  width:100%;
-  object-fit: contain;
-  padding: 0;
-  height:400px;
-  border: 1px solid transparent;
-  animation-name: fa-shake;
-}
-
- #slidea{
-  width: 300px;
- 
-} 
-
-/* #slideb{
-  width: 300px;
-} 
-
-#slidec{
-  width: 300px;
-}  */
-
-/* .swiper-slide img:first-of-type{
-  margin: -20px 0 0 0;
-} */
 
 /* --------------------------------------------------BOX 2 SECOND SECTION-----------------------------------*/
 
 .box2 {
-  padding: 150px 0 100px 0;
-  background-image: url("../images/penguinbg.png");
+  padding: 150px 80px 100px 80px;
+  /* background-image: url("../images/penguinbg.png");
   background-repeat:space;
    background-blend-mode: darken;
-  background-color: rgb(0,0,0 ,.65);
+  background-color: rgb(0,0,0 ,.65); */
  /* filter: brightness(50%); */
   background-attachment:scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .second-box-container {
   display: flex;
-  border: 1px solid transparent;
-  margin: 10px;
-  border-radius: 4px;
+  border-top: 5px solid #262626;
+  border-right: 5px solid #262626;
+  border-bottom: 5px solid #262626;
   align-items: center;
   justify-content: space-between;
+  width: 60%;
+  height: 350px;
 }
+
+.second-box-container-two {
+    display: flex;
+    border-left: 5px solid #262626;
+    border-bottom: 5px solid #262626;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    width: 90%;
+  }
+
+  .second-box-container-three {
+    display: flex;
+    border-right: 5px solid #262626;
+    border-bottom: 5px solid #262626;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    width:60%;
+    /* float: right; */
+    margin-left:30%;
+  }  
+
+  .second-box-container-four {
+    display: flex;
+    border-left: 5px solid #262626;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    width: 50%;
+    /* float: right; */
+    margin-left:30%;
+  }  
+
+  .second-box-container-five {
+    display: flex;
+    border-top: 5px solid #262626;
+    align-items: center;
+    justify-content: space-between;
+    width:10%;
+    margin-left:20%;
+    /* float: right; */
+    
+  }  
+
 
 .second-box {
   margin: 50px;
-  width: 50%;
-  padding: 30px;
+  width: 100%;
+  padding:1px;
   border: 1px solid transparent;
 }
 
@@ -418,21 +396,9 @@
   
 }
 
-.box2 h3 .primary{
-  color: var(--color-primary);
-}
 
-.box2 h1{
-  font-size:2.5em;
-  font-family: 'Press Start 2P', cursive;
-}
-
-h3.font{
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.2em;
-}
-
-.second-box p {
+.second-box li {
+    list-style-type: disc;
   color: var(--color-white);
   font-weight: light;
   text-align: justify;
@@ -441,83 +407,64 @@ h3.font{
   letter-spacing: 0.9px;
   line-height: 25px;
   font-size: 1em;
-  margin: 10px 0 0 0;
+  margin:20px;
   border: 1px solid transparent;
 }
 
-.second-box .button-box{
-  display: flex;
-  justify-content:left;
-  align-items: start;
-  border: 1px solid transparent;
-  
-}
 
-.second-box button {
-  margin:15px 0 0 -10px;
-  border: unset;
-  background: unset;
-  gap: 10px;
-}
+.image-box{
+    border: 1px solid transparent;
+    width: 50%;
+    /* height: 300px; */
+    padding:5px;
+    position: absolute;
+    margin: 100px 0 0 50%;
+ }
 
-.second-box a {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 10px 30px;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  margin: 10px;
-  text-decoration: none;
-}
-.second-box a:hover {
-  background-color: unset;
-  border: 2px solid var(--color-primary);
-  color: var(--color-white);
-  transition: 0.4s;
-}
-
-.author-box{
+ .image-boxb{
+    border: 1px solid transparent;
+    width: 50%;
+    height: 300px;
+    padding:5px;
+    margin: -300px 0 0 -15%;
+ }
+ 
+ .swiper-box{
    border: 1px solid transparent;
-   width: 50%;
    display: flex;
-   padding:10px;
-   justify-content: center;
+   position: relative;
+   flex-direction: column;
+    justify-content:center;
    align-items: center;
-}
+ }
+ 
+.image-box .swiper-box .swiper-slide img {
+   margin: 10px;
+   width:100%;
+   object-fit: contain;
+   padding: 0;
+   height:400px;
+   border: 1px solid transparent;
+   animation-name: fa-shake;
+ }
 
-.author-container{
-  border: 1px solid transparent;
-  border-radius: 20px;
-  /* position: absolute; */
-}
-
-#transitiona{  
-  border-radius: 26.1747px;
-  z-index:3;
-  transition: .5;
-  transform: rotate(-15deg);
-}
-
-#transitionb{
-border-radius: 26.1747px;
-transform: rotate(15deg);
-z-index: 2;
-transition: .5;
-}
-
-#transitionc{
-border-radius: 26.1747px;
-z-index: 1;
-transition: .5;
-}
+ .image-boxb .swiper-box .swiper-slide img {
+    margin: 10px;
+    width:100%;
+    object-fit: contain;
+    padding: 0;
+    height:400px;
+    border: 1px solid transparent;
+    animation-name: fa-shake;
+  }
 
 
-.second-box-container .author-box img {
+.second-box-container img {
   margin: 10px;
   width:100%;
   object-fit: contain;
   padding: 0;
-  height:400px;
+  height:300px;
   border: 1px solid transparent;
   border-radius: 20px;
   background-blend-mode: darken;

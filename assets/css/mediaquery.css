@@ -20,6 +20,12 @@
     padding: 20px;
     border: 1px solid transparent;
   }
+/* 
+  header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  } */
 
    
   .logoheaders h1{
@@ -110,6 +116,12 @@
     width: 100%;
 
   }
+
+  /* .author-container{
+    /* border: 1px solid transparent;
+    border-radius: 20px; 
+    position: relative;
+  } */
 
 
   /* ---------------------------TEAM BOX-----------------*/

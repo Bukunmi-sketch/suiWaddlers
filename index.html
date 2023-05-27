@@ -56,11 +56,11 @@
         </div>
         <ul>
             <li><a href="#home" onclick="closethebar()">Home</a></li>
-            <li><a href="#about" onclick="closethebar()">Sneak Peak</a></li>
+            <li><a href="#about" onclick="closethebar()">About Us</a></li>
             <li><a href="#team" onclick="closethebar()">Team</a></li>
             <li><a href="#faq" onclick="closethebar()">F<span>A</span>Q</a></li>
             <li><a href="#friends" onclick="closethebar()">Friends</a></li>
-
+            <li><a href="#" onclick="closethebar()">Roadmap</a></li>
             <li><a href="soon.html" class="resume_view"> Shop </a></li>
             <li><a href="soon.html" class="resume_view"> Stake </a></li>
         </ul>
@@ -91,8 +91,8 @@
                 <p> Discover A New Era Of Pixels With Waddlers! </p>
 
                 <div class="button-box">
-                    <button> <a href="" class="resume_view"> Discord </a></button>
-                    <button> <a href="" class="resume_view"> Twitter </a></button>
+                    <button> <a href="https://discord.com/invite/bWMQrKrqxr"  target="_blank" class="resume_view"> Discord </a></button>
+                    <button> <a href="https://twitter.com/waddlers_nft" target="_blank" class="resume_view"> Twitter </a></button>
                 </div>
 
             </div>
@@ -119,23 +119,46 @@
 
         <div class="second-box-container">
             <div class="second-box" data-aos="fade-up" data-aos-duration="2000">
-                <h3> <span class="primary">Waddlers </span> </h3> <br>
-                <h1>Sneak Peak </h1><br> <br><br>
+                <h3> <span class="primary">Waddlers NFT</span> </h3> <br>
+                <h1>About Us </h1><br> <br><br>
 
-                <h3 class="font"> Welcome to SuiWaddlers </h3>
-                <p> A one-of-a-kind NFT collection of 5555 waddlers on Sui network with iconic looks of punks art with a
-                    mixture of our creativity!
+                <h3 class="font"> Welcome to Waddlers NFT</h3>
+                <p>A one-of-a-kind NFT collection of 5555 waddlers on Sui network and 555 Waddlers on Ordinals with iconic looks of punks art with a mixture of our creativity! <br><br>
+
+                    A collection of 5555 NFTs based on Sui Blockchain. We are here to create a vibrant and dynamic ecosystem that leverages the power of blockchain technology to revolutionize the world of NFTs. Our vision is to achieve the blue-chip NFT status that is known for its innovation, quality, and community engagement. <br>
+                    The $WADL token is an essential component of our ecosystem. It serves as the main currency of our ecosystem that is used for staking rewards, as well as a reward for our early community members.Our token holders will have the rights to say and purpose their ideas to decide the future of this project!
                 </p>
-
+                <div class="button-box">
+                    <button> <a href="#"  target="_blank" class="resume_view"> Litepaper </a></button>
+                    <!-- <button> <a href="https://twitter.com/waddlers_nft" target="_blank" class="resume_view"> Twitter </a></button> -->
+                </div>
             </div>
 
             <div class="author-box" data-aos="fade-up" data-aos-duration="1500">
 
-                <div class="author-container">
-                    <img src="assets/images/nftcards.png" alt="nftcards">
+<!--                 
+                <div class="author-container" id="transitionb">
+                    <img src="assets/images/Suired.png" alt="nftcards">
                 </div>
 
+                 -->
+
+                   <div class="author-container" id="transitionc">
+                    <img src="assets/images/suibluray.png" alt="nftcards">
+                  </div>
+<!-- 
+                  <div class="author-container" id="transitiona">
+                    <img src="assets/images/suideepred.png" alt="nftcards">
+                  </div> -->
+
+<!--                   
+                  <button id="prev" style="position: relative;"> prev </button>
+            <button id="next"> next </button>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a> -->
             </div>
+           
         </div>
     </section>
     <!-- ================> About section end here <================== -->
@@ -258,7 +281,8 @@
                     <span> 1 </span>
                     <h3> When is minting? </h3>
                 </div>
-                <p>To be answered soon, to be answered soon</p>
+                <p class="answera" style="display:none;">To be answered soon, to be answered soon</p>
+                <span class="showbtn" id="showa"> View Answers </span>
             </div>
 
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
@@ -266,8 +290,8 @@
                     <span> 2 </span>
                     <h3> How to be eligible for mint? </h3>
                 </div>
-                <p> You can get the waddlist role in our discord channel And more info related to eligible for WL role.
-                </p>
+                <p class="answerb" style="display:none;"> You can get the waddlist role in our discord channel And more info related to eligible for WL role. </p>
+                <span class="showbtn" id="showb">View Answers</span>
             </div>
 
 
@@ -276,7 +300,8 @@
                     <span> 3 </span>
                     <h3> What is the price? </h3>
                 </div>
-                <p>To be answered soon, to be answered soon</p>
+                <p class="answerc" style="display:none;"> To be answered soon, to be answered soon</p>
+                <span class="showbtn" id="showc"> View Answers</span>
             </div>
 
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
@@ -284,7 +309,8 @@
                     <span> 4 </span>
                     <h3>What is the supply? </h3>
                 </div>
-                <p>The supply is 5555 only!</p>
+                <p class="answerd" style="display:none;">The supply is 5555 only!</p>
+                <span class="showbtn" id="showd"> View Answers </span>
             </div>
 
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1000">
@@ -292,10 +318,11 @@
                     <span> 5 </span>
                     <h3> How to get $WADL Token? </h3>
                 </div>
-                <p>$WADL Token will launch upon the mainnet of Sui Network! We will airdrop our $WADL Tokens to our
+                <p class="answere" style="display:none;">$WADL Token will launch upon the mainnet of Sui Network! We will airdrop our $WADL Tokens to our
                     holders and early contributors! our Zealy and OAT Holders will also be considered for airdrops! You
                     can get $WADL Token through Zealy by gaining XP. Convert ratio from XP to Token will release soon!
                 </p>
+                <span class="showbtn" id="showe"> View Answers </span>
             </div>
 
             <div class="faq-card" data-aos="fade-up" data-aos-duration="1100">
@@ -303,7 +330,8 @@
                     <span> 6 </span>
                     <h3> Is there any airdrop? </h3>
                 </div>
-                <p>Yes there is! we will airdrop our native token $WADL to our early contributors and supporters!</p>
+                <p class="answerf" style="display:none;">Yes there is! we will airdrop our native token $WADL to our early contributors and supporters!</p>
+                <span class="showbtn" id="showf"> View Answers </span>
             </div>
 
         </div>
@@ -332,7 +360,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a>John Doe</a></h4> <br>
+                        <h4><a>Coming Soon</a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
@@ -347,7 +375,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a> Klein</a></h4> <br>
+                        <h4><a>Coming Soon </a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
@@ -362,7 +390,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a> Abdul </a></h4> <br>
+                        <h4><a>Coming Soon </a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
@@ -376,7 +404,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a>Jane</a></h4> <br>
+                        <h4><a> Coming Soon </a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
@@ -390,7 +418,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a>James</a></h4> <br>
+                        <h4><a>Coming Soon</a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
@@ -404,7 +432,7 @@
 
                 <div class="partner-item-content">
                     <div class="partner-author">
-                        <h4><a>Shery</a></h4> <br>
+                        <h4><a> Coming Soon </a></h4> <br>
                         <p>From <span style="font-size:0.8em;">[where you know them]</span></p>
                     </div>
                 </div>
