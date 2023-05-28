@@ -479,7 +479,7 @@
         border-radius: 30px;
         transition: 0.4s;
         border:1px solid #262626;
-        margin: -135px 0 0 -15%;
+        margin: -135px 0 0 -8%;
         position: absolute;
 }
 
@@ -512,7 +512,7 @@
     border-radius: 30px;
     transition: 0.4s;
     border:1px solid #262626;
-    margin: -15px 0 0 -22%;
+    margin: -15px 0 0 -8%;
     position: absolute;
 }
 
@@ -523,6 +523,7 @@ footer{
   padding:100px 0 50px 0;
   display: flex;
   align-items: center;
+  height: 300px;
   justify-content: center;
   background-color: var(--color-black);
 }
@@ -533,4 +534,5 @@ footer p a{
   background-color: var(--color-dark);
   
 }
+
 

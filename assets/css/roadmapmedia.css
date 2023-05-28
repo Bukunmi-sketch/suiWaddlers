@@ -1,0 +1,305 @@
+/* ---------------------------MEDIA QUERY FOR SMALL TABLETS AND MOBILE PHONES-----------------*/
+@media screen and (max-width: 900px) {
+    header {
+      height: 70px;
+    }
+  
+    header ul {
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      height: 100vh;
+      background-color: var(--color-black);
+      left: -100%;
+    }
+  
+    header ul li {
+      padding: 20px;
+      border: 1px solid transparent;
+    }
+  /* 
+    header ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 25px;
+    } */
+  
+     
+    .logoheaders h1{
+      font-size: 1.4em;
+      margin-left: 10px;
+    }
+    
+    .logo {
+      font-size: 25px;
+      letter-spacing: 0;
+      margin-left: 20px;
+    }
+  
+    .logo img{
+      width:20px;
+      height: 20px;
+    }
+  
+    .darkmode{
+      padding: 10px;
+    }
+  
+    .darkmode img{
+      width:17px;
+      height: 17px;
+    } 
+  
+    .bars {
+      display: block;
+    }
+  
+    .box1 {
+      padding:0;
+      
+    }
+  
+    .first-box-container {
+      flex-direction: column;
+    }
+  
+    .first-box {
+      width: 100%;
+    }
+  
+    /* .first-box .button-box{
+      flex-direction: column;
+      justify-content:space-around;
+      align-items: center;
+    } */
+  
+    .image-box {
+      width: 100%;
+    }
+
+
+    /* -----------------------------------------------------SECOND BOX ----------------------------------- */
+
+    
+/* --------------------------------------------------BOX 2 SECOND SECTION-----------------------------------*/
+
+.box2 {
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  .second-box-container {
+    display: flex;
+    border-top: 5px solid #262626;
+    border-right: 5px solid #262626;
+    border-bottom: 5px solid #262626;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 350px;
+  }
+  
+  .second-box-container-two {
+      display: flex;
+      border-left: 5px solid #262626;
+      border-bottom: 5px solid #262626;
+      align-items: center;
+      justify-content: space-between;
+      height: 350px;
+      width: 100%;
+    }
+  
+    .second-box-container-three {
+      display: flex;
+      border-right: 5px solid #262626;
+      border-bottom: 5px solid #262626;
+      align-items: center;
+      justify-content: space-between;
+      height: 350px;
+      width:100%;
+      /* float: right; */
+      margin-left:0%;
+    }  
+  
+    .second-box-container-four {
+      display: flex;
+      border-left: 5px solid #262626;
+      align-items: center;
+      justify-content: space-between;
+      height: 350px;
+      width: 100%;
+      /* float: right; */
+      margin-left:0%;
+    }  
+  
+    .second-box-container-five {
+      display: flex;
+      border-top: 5px solid #262626;
+      align-items: center;
+      justify-content: space-between;
+      width:100%;
+      margin-left:0%;
+      /* float: right; */
+      
+    }  
+  
+  
+  .second-box {
+    margin: 50px;
+    width: 100%;
+    padding:1px;
+    border: 1px solid transparent;
+  }
+  
+  .box2 h3 {
+    font-size:1.4em;
+    font-weight: bold;
+    align-items: start;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 30px;
+    color: white;
+    
+  }
+  
+  
+  .second-box li {
+      list-style-type: disc;
+    color: var(--color-white);
+    font-weight: light;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.9px;
+    line-height: 25px;
+    font-size: 1em;
+    margin:20px;
+    border: 1px solid transparent;
+  }
+  
+  
+  .image-box{
+      border: 1px solid transparent;
+      width: 50%;
+      /* height: 300px; */
+      padding:5px;
+      position:relative;
+      /* margin: 100px 0 0 50%; */
+      display: none;
+   }
+  
+   .image-boxb{
+      border: 1px solid transparent;
+      width: 50%;
+      height: 300px;
+      padding:5px;
+      margin: -110px 0 0 25%;
+      position: relative;
+   }
+   
+   .swiper-box{
+     border: 1px solid transparent;
+     display: flex;
+     position: relative;
+     flex-direction: column;
+      justify-content:center;
+     align-items: center;
+   }
+   
+  .image-box .swiper-box .swiper-slide img {
+     margin: 10px;
+     width:100%;
+     object-fit: contain;
+     padding: 0;
+     height:400px;
+     border: 1px solid transparent;
+     animation-name: fa-shake;
+   }
+  
+   .image-boxb .swiper-box .swiper-slide img {
+      margin: 10px;
+      width:100%;
+      object-fit: contain;
+      padding: 0;
+      height:400px;
+      border: 1px solid transparent;
+      animation-name: fa-shake;
+    }
+  
+  
+  .second-box-container img {
+    margin: 10px;
+    width:100%;
+    object-fit: contain;
+    padding: 0;
+    height:300px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-blend-mode: darken;
+    background-color: rgb(0,0,0 ,.65);
+  
+  }
+  
+  .perioda{
+          background-color:#262626;
+          color: white;
+          padding: 10px 30px;
+          border-radius: 30px;
+          transition: 0.4s;
+          border:1px solid #262626;
+          margin: -20% 0 0 -8%;
+          position: absolute;
+  }
+  
+  .periodb{
+      background-color:#262626;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: 0.4s;
+      border:1px solid #262626;
+      margin:-20% 0 0 5%;
+      position: absolute;
+  }
+  
+  .periodc{
+      background-color:#262626;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: 0.4s;
+      border:1px solid #262626;
+      margin:-20% 0 0 40%;
+      position: absolute;
+  }
+  
+  .periodd{
+      background-color:#262626;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: 0.4s;
+      border:1px solid #262626;
+      margin: -20% 0 0 -8%;
+      position: absolute;
+  }
+  
+  
+
+  }
+  
+  @media screen and (max-width:500px) {
+  
+    .partner-card {
+      width:100%;
+     
+      /* flex-shrink: unset; */
+      /* display: none; */
+    }
+  }
