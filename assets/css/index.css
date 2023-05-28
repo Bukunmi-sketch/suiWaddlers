@@ -184,9 +184,13 @@
     font-size: 2.1em;
   }
   
-  span {
-    /* color: var(--color-primary); */
+  .primary{
+    color: var(--color-primary);
     letter-spacing: 0.5px;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 0.8em;
+    margin-top: 15px;
+    /* border: 1px solid red; */
   }
   
   header ul li {

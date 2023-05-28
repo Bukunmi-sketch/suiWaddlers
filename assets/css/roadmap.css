@@ -122,7 +122,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--color-black);
+    background-color: #161718;
     color: var(--color-white);
     position: fixed;
     border: 1px solid transparent;
@@ -244,7 +244,7 @@
 .box1 {
   margin-top:90px ;
   padding: 20px 0 100px 0;
-  background-color: var(--color-dark);
+  background-color: #1B1C1E;
   border: 1px solid transparent;
   
 }
